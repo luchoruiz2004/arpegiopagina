@@ -1,2 +1,4 @@
-@import "./partials/variables";
-@import "./partials/reset";
+@use "./partials/variables";
+@use "./partials/reset";
+@use "./partials/header";
+@use "./partials/carousel";

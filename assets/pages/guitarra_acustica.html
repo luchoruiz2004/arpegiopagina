@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitarra Acústica - Arpegio Casa de Música</title>
+    <!--Bootstrap antes de los estilos personalizados-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--el script de bootstrap lo pongo antes del cierre del body-->
+    <!--animate css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--ESTILOS-->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <img src="../../assets/img/logo.png" alt="Logo" width="60px" class="navbar-brand">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item"
+                                        href="../../assets/pages/instrumentosyaccesorios.html">Instrumentos y
+                                        accesorios</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../assets/pages/quienes-somos.html">Quiénes Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../assets/pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search" />
+                        <button class="btn btn-outline-secondary" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container my-4 product-page-dark">
+        <section class="row g-5 mb-5 align-items-center">
+            <div class="col-12 col-lg-6">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade animate__animated animate__fadeIn"
+                    data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../../assets/img/guitarra-acustica1.webp" class="d-block w-100 object-fit-cover"
+                                alt="Guitarra Acústica 1" style="height: 400px;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../../assets/img/guitarra-acustica2.webp" class="d-block w-100 object-fit-cover"
+                                alt="Guitarra Acústica 2" style="height: 400px;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../../assets/img/guitarra-acustica3.webp" class="d-block w-100 object-fit-cover"
+                                alt="Guitarra Acústica 3" style="height: 400px;">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 product-details-box">
+                <h1 class="fw-bold h1 text-dark mb-1 animate__animated animate__fadeInRight">Guitarra Criolla Clásica De
+                    Estudio + Funda De Regalo</h1>
+                <p class="text-muted small mb-4 animate__animated animate__fadeInLeft animate__delay-1s">SKU: TRONADOR02
+                </p>
+                <div
+                    class="price-card p-4 rounded-4 shadow-sm mb-4 animate__animated animate__fadeInRight animate__delay-1s">
+                    <p class="display-5 mb-1"><strong>$150</strong></p>
+                    <p class="fw-bold mb-2">$135 con Transferencia o depósito</p>
+                    <p class="small mb-0 opacity-75 mt-1"><strong>10% de descuento</strong> pagando con Transferencia
+                    </p>
+                </div>
+                <div class="mb-4">
+                    <label for="zip" class="form-label fw-bold text-dark mb-2"><i class="bi bi-truck"></i> Medios de
+                        envío</label>
+                    <div class="input-group mb-2" style="max-width: 350px;">
+                        <input type="text" id="zip" class="form-control" placeholder="Tu código postal">
+                        <button class="btn btn-dark px-4" type="button">CALCULAR</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <div class="bg-light p-4 rounded-4 shadow-sm text-dark">
+                <h2 class="fw-bold h2 mb-3 border-bottom pb-2">Descripción</h2>
+                <p class="fw-semibold">Excelente guitarra para empezar</p>
+                <p class="fw-bold">Características</p>
+                <ul class="row row-cols-1 row-cols-md-2 g-2 list-unstyled ps-0">
+                    <p>
+                        Esta guitarra clásica está diseñada especialmente para quienes dan sus primeros pasos en el
+                        mundo de la música. Gracias a sus cuerdas de nylon más blandas y un mástil ergonómico de
+                        excelente agarre, ofrece una experiencia de uso sumamente cómoda, evitando la fatiga en los
+                        dedos típica de los comienzos y facilitando el aprendizaje de los primeros acordes de forma
+                        fluida.
+                    </p>
+                    <p>
+                        Con una cuidada selección de maderas que garantizan una resonancia limpia y un sonido cálido y
+                        dulce, este instrumento destaca por su excelente relación precio-calidad y su gran durabilidad.
+                        Es la opción ideal para estudiantes que buscan un instrumento confiable, cómodo y listo para
+                        acompañarlos en sus clases, ensayos o sesiones de práctica en casa.
+                    </p>
+                </ul>
+            </div>
+        </section>
+
+        <section class="related-products-section">
+            <h2 class="fw-bold h4 text-dark mb-4">Te podria interesar</h2>
+
+            <div class="row g-4">
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <article class="card product-card text-white border-0 shadow-sm h-100">
+                        <img src="../../assets/img/cuerda-guitarra.webp" class="card-img" alt="Guitarra Criolla + Funda"
+                            style="height: 250px; object-fit: cover;">
+                        <div class="card-img-overlay d-flex flex-column justify-content-end p-0">
+                            <div class="overlay-blur-content p-4">
+                                <strong class="card-title h6 fw-bold mb-2 text-truncate">Cuerdas para Guitarra</h3>
+                                </strong>
+                                <p class="card-text"><strong>Sin stock</strong></p>
+                                <button class="btn botoncard" disabled>Agotado</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <strong>Contacto</strong>
+                    <ul class="list-unstyled">
+                        <li><a href="../../assets/pages/contacto.html"
+                                class="text-decoration-none text-white"><strong>Página de
+                                    Contacto</strong></a></li>
+                        <li><i class="fas fa-envelope"></i>info@arpegiodemusica.com</li>
+                        <!--fa-envelope es el icono de correo electrónico-->
+                        <li><i class="fas fa-phone"></i>(11) 1234-5678</li><!--fa-phone es el icono de teléfono-->
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <strong>Dirección</strong>
+                    <p><i class="fas fa-map-marker-alt"></i>Av. Principal 123, Buenos Aires, Argentina</p>
+                    <!--fa-map-marker-alt es el icono de ubicación-->
+                </div>
+                <div class="col-md-4">
+                    <strong>Síguenos</strong>
+                    <div class="iconos-sociales">
+                        <img src="../../assets/img/facebook.svg" alt="Icono de Facebook" class="me-3">
+                        <img src="../../assets/img/instagram.svg" alt="Icono de Instagram" class="me-3">
+                        <img src="../../assets/img/whatsapp.svg" alt="Icono de WhatsApp" class="me-3">
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-3 pt-3 border-top">
+                <p class="mb-0"> 2026 Arpegio Casa de Música. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

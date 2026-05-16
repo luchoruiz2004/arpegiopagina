@@ -1,7 +1,31 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
+}
+
+.header {
+  position: relative;
+  top: 0;
+  z-index: 1000; /* para que el submenu esté por encima de las imagenes del index */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.header .navbar div ul li {
+  transition: transform 0.3s ease;
+}
+.header .navbar div ul li:hover {
+  transform: scale(1.02);
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 300px;
+  /*en la media query achico este codigo*/
+  /* o la altura que quieras */
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* ajusta la imagen para cubrir sin deformar */
 }/*# sourceMappingURL=estilo.css.map */

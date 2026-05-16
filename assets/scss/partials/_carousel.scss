@@ -1,0 +1,10 @@
+.carousel-inner {
+    img {
+        width: 100%;
+        height: 300px;
+        /*en la media query achico este codigo*/
+        /* o la altura que quieras */
+        object-fit: cover;
+        /* ajusta la imagen para cubrir sin deformar */
+    }
+}

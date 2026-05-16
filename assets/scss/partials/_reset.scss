@@ -1,6 +1,7 @@
+@use 'variables';
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: $font-open-sans;
+    font-family: variables.$font-open-sans;
 }
