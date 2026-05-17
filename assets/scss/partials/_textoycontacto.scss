@@ -1,0 +1,90 @@
+/*personalizacion de texto*/
+@use 'variables';
+@use 'mixin' as mix;
+
+.textotodoslosproductos {
+    text-align: center;
+    margin-top: -20px;
+    font-size: 2rem;
+}
+
+.texto_quienessomos {
+    background-color: variables.$mainColor;
+    padding: 20px;
+    @include mix.aplicar-bordes(10px);
+}
+
+
+/*contacto*/
+
+.titulo-principal-contacto {
+    /*extend*/
+    color: #070707;
+    font-weight: 700;
+}
+
+.contact-page {
+
+    // Título principal de la página
+    .section-title {
+        @extend .titulo-principal-contacto;
+    }
+
+    // Los dos paneles principales (el del formulario y el de info)
+    .contact-panel {
+        background-color: variables.$secondaryColor;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; // Centra el contenido verticalmente si sobra espacio
+
+        // Estilos específicos para los textos de los campos del formulario
+        .form-label {
+            font-weight: 600;
+            color: #000000;
+        }
+
+        .form-control {
+            @include mix.aplicar-bordes(8px);
+
+            &:focus {
+                border-color: variables.$mainColor; // Cambia el color de foco si quieres
+                box-shadow: 0 0 0 0.25rem rgba(variables.$mainColor, 0.25);
+            }
+        }
+    }
+
+    // Bloques blancos dentro del panel de información (Datos y Servicio Técnico)
+    .contact-info-block {
+        background-color: rgba(255, 255, 255, 0.85);
+        padding: 1.5rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+        @include mix.aplicar-bordes(1rem);
+
+        .info-title {
+            font-size: 1.25rem;
+            @extend .titulo-principal-contacto;
+        }
+    }
+
+    // Lista de ítems de contacto (Dirección, Teléfono, Email)
+    .contact-info-list {
+        li {
+            margin-bottom: 0.85rem;
+            color: #4a5568;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+
+            &:last-child {
+                margin-bottom: 0; // El último ítem no necesita espacio abajo
+            }
+        }
+
+        .contact-icon {
+            font-size: 1.2rem;
+            margin-right: 0.75rem;
+        }
+    }
+}

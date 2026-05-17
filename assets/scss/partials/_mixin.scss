@@ -1,0 +1,11 @@
+@mixin aplicar-bordes($radio) {
+    border-radius: $radio;
+}
+
+@mixin animacion-hover($propiedad, $tiempo, $transformacion-efecto) {
+    transition: $propiedad $tiempo ease;
+
+    &:hover {
+        transform: $transformacion-efecto;
+    }
+}

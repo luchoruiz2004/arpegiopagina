@@ -10,13 +10,15 @@
 .header {
   position: relative;
   top: 0;
-  z-index: 1000; /* para que el submenu esté por encima de las imagenes del index */
+  z-index: 1000;
+  /* para que el submenu esté por encima de las imagenes del index */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.header .navbar div ul li {
+
+.navbar li {
   transition: transform 0.3s ease;
 }
-.header .navbar div ul li:hover {
+.navbar li:hover {
   transform: scale(1.02);
 }
 
@@ -28,4 +30,162 @@
   -o-object-fit: cover;
      object-fit: cover;
   /* ajusta la imagen para cubrir sin deformar */
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+}
+
+.product-card {
+  border: none;
+  overflow: hidden; /* para que el contenido no se salga de los bordes redondeados */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  position: relative;
+  background: transparent;
+  border-radius: 18px;
+}
+.product-card .card-img-top {
+  width: 100%;
+  height: 320px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.product-card .card-img-top:hover {
+  transform: scale(1.04);
+}
+.product-card .card-body {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background: rgba(0, 0, 0, 0.55);
+  color: rgb(255, 255, 255);
+}
+.product-card .card-body .card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.botoncard { /*lo dejo afuera del card-body para que se pueda reutilizar en otros contextos*/
+  padding: 10px 18px;
+  background-color: rgb(170, 164, 164);
+  color: #000000;
+  border: none;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 0;
+  align-self: flex-start;
+  border-radius: 999px;
+  transition: all 0.2s ease;
+}
+.botoncard:hover {
+  transform: scale(-1px);
+}
+.botoncard:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
+}
+
+/*personalizacion de texto*/
+.textotodoslosproductos {
+  text-align: center;
+  margin-top: -20px;
+  font-size: 2rem;
+}
+
+.texto_quienessomos {
+  background-color: rgb(170, 164, 164);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/*contacto*/
+.titulo-principal-contacto, .contact-page .contact-info-block .info-title, .contact-page .section-title {
+  /*extend*/
+  color: #070707;
+  font-weight: 700;
+}
+
+.contact-page .contact-panel {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-page .contact-panel .form-label {
+  font-weight: 600;
+  color: #000000;
+}
+.contact-page .contact-panel .form-control {
+  border-radius: 8px;
+}
+.contact-page .contact-panel .form-control:focus {
+  border-color: rgb(170, 164, 164);
+  box-shadow: 0 0 0 0.25rem rgba(170, 164, 164, 0.25);
+}
+.contact-page .contact-info-block {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  border-radius: 1rem;
+}
+.contact-page .contact-info-block .info-title {
+  font-size: 1.25rem;
+}
+.contact-page .contact-info-list li {
+  margin-bottom: 0.85rem;
+  color: #4a5568;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+.contact-page .contact-info-list li:last-child {
+  margin-bottom: 0;
+}
+.contact-page .contact-info-list .contact-icon {
+  font-size: 1.2rem;
+  margin-right: 0.75rem;
+}
+
+.footer {
+  background-color: rgb(170, 164, 164);
+  color: rgb(255, 255, 255);
+  padding: 20px 0;
+}
+.footer .iconos-sociales img {
+  filter: invert(100%);
+  /* para invertir el color de los iconos a blanco */
+  width: 1.5rem;
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  /*media query para pantallas medianas*/
+  .carousel-inner img {
+    height: 200px;
+    /* altura más pequeña para pantallas medianas */
+  }
+  .textotodoslosproductos {
+    margin-top: -120px;
+    font-size: 1.5rem;
+    /* tamaño de fuente más pequeño para pantallas medianas */
+  }
+}
+@media (max-width: 768px) {
+  /*media query para pantallas pequeñas*/
+  .carousel-inner img {
+    height: 150px;
+    /* altura más pequeña para pantallas pequeñas */
+  }
+  .textotodoslosproductos {
+    margin-top: -180px;
+    font-size: 1.2rem;
+  }
 }/*# sourceMappingURL=estilo.css.map */

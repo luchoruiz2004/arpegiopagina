@@ -1,19 +1,15 @@
+@use 'mixin' as mix;
+
 .header {
     position: relative;
     top: 0;
-    z-index: 1000; /* para que el submenu esté por encima de las imagenes del index */
+    z-index: 1000;
+    /* para que el submenu esté por encima de las imagenes del index */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-    .navbar {
-        div {
-            ul {
-                li {
-                    transition: transform 0.3s ease;
-                    &:hover {
-                        transform: scale(1.02);
-                    }
-                }
-            }
-        }
+.navbar {
+    li {
+        @include mix.animacion-hover(transform, 0.3s, scale(1.02));
     }
 }

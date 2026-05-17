@@ -1,0 +1,54 @@
+@use 'variables' as color;
+@use 'mixin' as mix;
+
+.card {
+    width: 100%;
+    height: 100%;
+}
+
+.product-card {
+    border: none;
+    overflow: hidden; /* para que el contenido no se salga de los bordes redondeados */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+    position: relative;
+    background: transparent;
+    @include mix.aplicar-bordes(18px);
+
+    .card-img-top {
+        width: 100%;
+        height: 320px;
+        object-fit: cover;
+        @include mix.animacion-hover(transform, 0.4s, scale(1.04));
+    }
+    .card-body {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        background: rgba(0, 0, 0, 0.55);
+        color: color.$secondaryColor;
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+    }
+}
+
+.botoncard {/*lo dejo afuera del card-body para que se pueda reutilizar en otros contextos*/
+    padding: 10px 18px;
+    background-color: color.$mainColor;
+    color: #000000;
+    border: none;
+    width: fit-content;
+    margin-top: 0;
+    align-self: flex-start;
+    @include mix.aplicar-bordes(999px);
+    @include mix.animacion-hover(all, 0.2s, scale(-1px));
+    &:hover {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
+    }
+}

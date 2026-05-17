@@ -1,0 +1,12 @@
+@use 'variables';
+.footer {
+    background-color: variables.$mainColor;
+    color: variables.$secondaryColor;
+    padding: 20px 0;
+    .iconos-sociales img {
+        filter: invert(100%);
+        /* para invertir el color de los iconos a blanco */
+        width: 1.5rem;
+        text-align: center;
+    }
+}
